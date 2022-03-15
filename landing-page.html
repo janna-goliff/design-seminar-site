@@ -35,10 +35,37 @@
               'myself': 'ashley_robinson',
               'legacy': 'brian_nguyen',
           }
-          window.location.href = window.location.href.replace(
+          const words = [
+              'an_escape',
+              'metamorphosis',
+              'adaptability',
+              'coherence',
+              'memory', 
+              'identity',
+              'anxiety',
+              'balance',
+              'interaction',
+              'culture',
+              'understanding',
+              'stories',
+              'sustainability',
+              'myself',
+              'legacy',
+        ]
+          words.forEach(word => {
+              console.log("getting element: ", word)
+            const curr = document.getElementById(word);
+            console.log(curr)
+            curr.classList.add("word_transition");
+          });
+
+          setTimeout(function () {
+            window.location.href = window.location.href.replace(
               "landing-page.html",
               map[word] + ".html"
           );
+          }, 1000);
+          
         }
         </script>
     <div class="landing_container">
