@@ -47,15 +47,12 @@ body {
     position: fixed;
 }
 
-
-
 #an_escape:hover {
     fill: green;
 }
 #an_escape:hover ~ #landing_background_image {
     background-image: url('word_background_imgs/an_escape.jpg');
 }
-
 
 #metamorphosis:hover {
     fill: orange;
